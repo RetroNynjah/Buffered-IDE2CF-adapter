@@ -1,11 +1,11 @@
 # Buffered IDE2CF Adapter
-<img src="rev1\images\pcb_top.svg" alt="PCB top" width="300"/><br/>
+<img src="rev1\images\pcb_top.svg" alt="PCB top" width="400"/><br/>
 This adapter was designed with the TF1260 accelerator board in mind because my TF1260 EHIDE interface does not work with a plain IDE2CF-adapter but works fine with a buffered adapter.  
 The shape of the adapter makes it fit directly on top of the Tf1260 even if there are heatsinks on the CPLDs.  
 It can also be fitted onto the standard IDE controller on the motherboard of the Amiga 1200 but there's not enough room to fit it directly onto the motherboard of the Amiga 600.  
 
 The adapter provides an external LED connector so that the Amiga 1200 HDD LED can be connected to the IDE2CF adapter instead of the motherboard and thereby making the standard HDD LED work with the TF1260 EHIDE interface.  
-<img src="rev1\images\tf1260.png" alt="Adapter installed on TF1260" width="400"/><br/>
+<img src="rev1\images\tf1260.jpg" alt="Adapter installed on TF1260" width="600"/><br/>
 
 ### Build & configuration
 The adapter is designed to have a 44-pin female IDE-connector on the bottom side which can mate directly to the IDE controller's pin header.  
