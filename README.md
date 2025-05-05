@@ -3,6 +3,7 @@
 This adapter was designed with the TF1260 accelerator board in mind because my TF1260 EHIDE interface does not work with a plain IDE2CF-adapter but works fine with a buffered adapter.  
 The shape of the adapter makes it fit directly on top of the Tf1260 even if there are heatsinks on the CPLDs.  
 It can also be fitted onto the standard IDE controller on the motherboard of the Amiga 1200 but there's not enough room to fit it directly onto the motherboard of the Amiga 600.  
+When used with the onboard IDE controller on the Amiga 1200 it can cause issues with some clockport hardware. This is not the case when used with the Terrible Fire boards that it was designed for.  
 
 The adapter provides an external LED connector so that the Amiga 1200 HDD LED can be connected to the IDE2CF adapter instead of the motherboard and thereby making the standard HDD LED work with the TF1260 EHIDE interface.  
 <img src="rev1\images\tf1260.jpg" alt="Adapter installed on TF1260" width="600"/><br/>
@@ -21,14 +22,15 @@ JP3/R3 is for pin 2
 
 Some LED configurations examples:
 
-##### Amiga 1200 HDD LED on LED board (with resistor)
-* Connect LED to pin 2 (left)
-* Add solder to JP3.  
+##### Amiga 1200 HDD LED on original LED board (with resistor)
+* Unplug LED cable from motherboard connector
+* Connect LED cable to pin 2 (left pin)
+* Add solder to JP3 (there is already a resistor on the LED board)
 * R4/JP4 can be left unpopulated as they aren't used.
 
 ##### External LED connected to ground
 * Connect LED to pin 2 (left)  
-* Do NOT add solder to JP3.  
+* Do NOT add solder to JP3
 * Add a current limiting resitor to R3. 560 Ohm is probably a good value.  
 * R4/JP4 can be left unpopulated as they aren't used.
 
